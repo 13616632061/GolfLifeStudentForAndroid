@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.zxing.client.android.test" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="23" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.google.zxing.client.android.test"
+        android:targetPackage="com.google.zxing.client.android.test" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application android:allowBackup="true" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- 二维码扫描ACTION -->
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 生成二维码 -->
+        <activity android:name="com.google.zxing.client.android.encode.EncodeActivity" >
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.ENCODE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

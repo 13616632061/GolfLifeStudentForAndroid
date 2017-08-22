@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_white_layout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="6dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:background="@color/colorOrange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view"
+                android:gravity="center"
+                android:text="@string/todayPlan"
+                android:textColor="@color/primaryColor"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:padding="5dp"
+                android:src="@drawable/btn_video_expand" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_home_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/home_text1"
+                android:textColor="@color/primaryColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/shape_appointment"
+                android:paddingBottom="7dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="7dp"
+                android:text="@string/home_text2"
+                android:textColor="@color/colorOrange"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:drawable="@drawable/chat_pic_phone3_h" android:duration="333"/>
+    <item android:drawable="@drawable/chat_pic_phone2_h" android:duration="333"/>
+    <item android:drawable="@drawable/chat_pic_phone1_h" android:duration="333"/>
+</animation-list>

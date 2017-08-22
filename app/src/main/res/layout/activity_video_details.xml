@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_root">
+
+    <com.glorystudent.widget.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/published">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.glorystudent.widget.PullableNoUpListView
+            android:id="@+id/video_details_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+
+        <include layout="@layout/load_more" />
+
+    </com.glorystudent.widget.PullToRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/published"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_horizontal_line2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/btn_video_editor"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/video_text1"
+            android:textColor="@color/colorOrange"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

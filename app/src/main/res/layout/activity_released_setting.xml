@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray7"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <LinearLayout
+        android:id="@id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/back_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:text="@string/released_text23"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="15dp"
+            android:text="@string/released_text27"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_apply_begin_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:gravity="right"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="15dp"
+            android:text="@string/released_text28"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_apply_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:gravity="right"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="15dp"
+            android:text="@string/released_text29"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_sponsor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="@string/released_text30"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="@color/primaryColor"
+            android:textColorHint="@color/colorGray11"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingBottom="15dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="15dp"
+            android:text="@string/released_text31"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+
+        <com.glorystudent.golflibrary.widget.switchbutton.SwitchView
+            android:id="@+id/switch_view_apply_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            app:isOpened="true"
+            app:primaryColor="#fe9042"
+            app:primaryColorDark="#00ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="6dp"
+        android:paddingLeft="16dp"
+        android:text="@string/released_text33"
+        android:textColor="@color/colorGray"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingBottom="15dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="15dp"
+            android:text="@string/released_text32"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+
+        <com.glorystudent.golflibrary.widget.switchbutton.SwitchView
+            android:id="@+id/switch_view_photo_wall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            app:primaryColor="#fe9042"
+            app:primaryColorDark="#00ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="6dp"
+        android:paddingLeft="16dp"
+        android:text="@string/released_text34"
+        android:textColor="@color/colorGray"
+        android:textSize="12sp" />
+</LinearLayout>

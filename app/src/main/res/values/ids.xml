@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="webview" type="id"></item>
+    <item name="folder" type="id"></item>
+    <item name="videotype" type="id"></item>
+    <item name="zippath" type="id"></item>
+    <item name="aliobject" type="id"></item>
+    <item name="stuprofileexpand" type="id"></item>
+</resources>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray5"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <LinearLayout
+        android:id="@id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/back_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:text="@string/event_text1"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/tv_certificate_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_btn_login"
+                android:gravity="center"
+                android:text="@string/my_text38"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rl_bottom_cancel"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="156dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_certificate_name"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_certificate_cost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/tv_certificate_name"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="18sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true">
+
+                            <LinearLayout
+                                android:id="@+id/ll_apply_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_certificate_apply_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorOrange"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="人已报名"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_certificate_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ll_apply_number"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/primaryColor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_certificate_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_certificate_date"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/primaryColor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_certificate_look_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/shape_btn_certificate"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="21dp"
+                                android:paddingRight="21dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/event_text2"
+                                android:textColor="@color/colorOrange"
+                                android:textSize="12sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_pic_canceled"
+                                android:layout_width="76dp"
+                                android:layout_height="76dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="7dp"
+                                android:src="@drawable/pic_canceled"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_pic_completed"
+                                android:layout_width="76dp"
+                                android:layout_height="76dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="7dp"
+                                android:src="@drawable/pic_completed"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_certificate_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@color/colorGray8" />
+
+                        <LinearLayout
+                            android:layout_width="260dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="40dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/colorGray5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:paddingTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/event_text3"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_certificate_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:textColor="@color/primaryColor"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/event_text4"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_certificate_apply_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/primaryColor"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_certificate_qrcode"
+                            android:layout_width="146dp"
+                            android:layout_height="146dp"
+                            android:layout_gravity="center_horizontal"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/my_text37"
+                            android:textColor="@color/colorGray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_photo_wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_photo_wall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_certificate_photo_wall_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="12dp"
+                            android:drawableRight="@drawable/btn_home_more"
+                            android:gravity="center_vertical"
+                            android:text="112"
+                            android:textColor="@color/colorGray"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginStart="13dp"
+                            android:text="@string/event_text5"
+                            android:textColor="@color/colorGray"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/colorGray8" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="10dp"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_add_photo"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/icon_competition_photo" />
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rv_photo_wall"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:scrollbars="none" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_certificate_cancel_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="374dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="36dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginRight="29dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/pic_envelope"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="27dp"
+                        android:layout_marginTop="26dp"
+                        android:text="@string/event_text24"
+                        android:textColor="@color/colorOrange"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_certificate_cancel_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="34dp"
+                        android:layout_marginRight="33dp"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="34dp"
+                        android:layout_marginRight="33dp"
+                        android:text="@string/event_text25"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

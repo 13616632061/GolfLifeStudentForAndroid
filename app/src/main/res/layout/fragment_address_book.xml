@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray5"
+    android:orientation="vertical">
+
+    <com.glorystudent.widget.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.glorystudent.widget.PullableNoUpExpandableListView
+            android:id="@+id/elv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="0.5dp"
+            android:divider="#00ffffff"
+            android:childDivider="@color/colorGray3"/>
+
+        <include layout="@layout/load_more" />
+
+    </com.glorystudent.widget.PullToRefreshLayout>
+</LinearLayout>

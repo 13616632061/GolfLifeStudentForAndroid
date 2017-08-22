@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <LinearLayout
+        android:id="@id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/back_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:text="@string/released_tex39"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray7"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_photograph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="14dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="14dp"
+                    android:text="@string/released_text40"
+                    android:textColor="@color/colorBlack2"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_add_from_album"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="14dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="14dp"
+                    android:text="@string/released_text41"
+                    android:textColor="@color/colorBlack2"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/released_text42"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray7" />
+
+                <ImageView
+                    android:id="@+id/competition_banner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/competition_banner_1" />
+
+                <ImageView
+                    android:id="@+id/competition_banner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/competition_banner_2" />
+
+                <ImageView
+                    android:id="@+id/competition_banner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/competition_banner_3" />
+
+                <ImageView
+                    android:id="@+id/competition_banner4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/competition_banner_4" />
+
+                <ImageView
+                    android:id="@+id/competition_banner5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/competition_banner_5" />
+
+                <ImageView
+                    android:id="@+id/competition_banner6"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/competition_banner_6" />
+
+                <ImageView
+                    android:id="@+id/competition_banner7"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/competition_banner_7" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

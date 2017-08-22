@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.glorystudent.golflife">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="24" />
+
+
+    <!--环信所需权限-->
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- Required -->
+    <permission
+        android:name="com.glorystudent.golflife.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Required -->
+    <uses-permission android:name="com.glory.golflife.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <!--ShareSDK所需权限-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--硬件支持-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <application
+        android:name="com.glorystudent.golflife.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBar">
+        <!--欢迎页-->
+        <activity
+            android:name="com.glorystudent.golflife.WelcomeActivity"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--登陆页面-->
+        <activity
+            android:name="com.glorystudent.golflife.LoginActivity"
+            android:theme="@style/FullScreen">
+
+        </activity>
+
+        <!--绑定手机号-->
+        <activity android:name="com.glorystudent.golflife.BindPhoneNumberActivity" />
+        <!--主页面-->
+        <activity android:name="com.glorystudent.golflife.MainActivity">
+
+        </activity>
+
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1134161121178869#golflife" />
+        <!-- 声明SDK所需的service SDK核心功能-->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1105909466" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.glorystudent.golflife.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.glorystudent.golflife.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.glory.golflife" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="com.glory.golflife" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.glory.golflife" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined. 用户自定义的广播接收器-->
+        <receiver
+            android:name="com.glorystudent.receiver.MyReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <!--Required 用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!--Required 用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!--Required 用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--Required 用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <category android:name="com.glory.golflife" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。-->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。-->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="20a1cf849da2cfff70700ff6" />
+
+
+        <!--我的预约界面-->
+        <activity android:name="com.glorystudent.golflife.MyPactActivity" />
+        <!--我的预约详情-->
+        <activity android:name="com.glorystudent.golflife.MyAppointmentActivity" />
+        <!--我的课程-->
+        <activity android:name="com.glorystudent.golflife.MyCourseActivity" />
+        <!--我的计分卡-->
+        <activity android:name="com.glorystudent.golflife.MyScoreActivity" />
+        <!--计分卡-->
+        <activity android:name="com.glorystudent.golflife.ScoreCardActivity" />
+        <!--我的视频-->
+        <activity android:name="com.glorystudent.golflife.MyVideoActivity" />
+        <!--我的收藏-->
+        <activity android:name="com.glorystudent.golflife.MyCollectActivity" />
+        <!--教练认证-->
+        <activity android:name="com.glorystudent.golflife.MyAttestationActivity" />
+        <!--邀请球友-->
+        <activity android:name="com.glorystudent.golflife.MyInviteActivity" />
+        <!--赛事活动-->
+        <activity android:name="com.glorystudent.golflife.EventActivity" />
+        <!--赛事活动发布-->
+        <activity android:name="com.glorystudent.golflife.EventReleasedActivity" />
+        <!--活动发布详情描述-->
+        <activity android:name="com.glorystudent.golflife.ReleasedEventInfoActivity" />
+        <!--活动发布的高级设置-->
+        <activity android:name="com.glorystudent.golflife.ReleasedSettingActivity" />
+        <!--活动预览-->
+        <activity android:name="com.glorystudent.golflife.ReleasedPreviewActivity" />
+        <!--添加图片-->
+        <activity android:name="com.glorystudent.golflife.ReleasedAddImageActivity" />
+        <!--图片详情-->
+        <activity android:name="com.glorystudent.golflife.ImageDetailActivity" />
+        <!--搜索地址-->
+        <!--活动详情-->
+        <activity android:name="com.glorystudent.golflife.EventDetailActivity" />
+        <!--活动详情2-->
+        <activity android:name="com.glorystudent.golflife.EventDetail2Activity" />
+        <!--活动详情3-->
+        <activity android:name="com.glorystudent.golflife.EventDetail3Activity" />
+        <!--设置-->
+        <activity android:name="com.glorystudent.golflife.MySetActivity" />
+        <!--编辑个人资料-->
+        <activity android:name="com.glorystudent.golflife.EditProfileActivity" />
+        <!--意见反馈-->
+        <activity android:name="com.glorystudent.golflife.OpinionBackActivity" />
+        <!--关于我们-->
+        <activity android:name="com.glorystudent.golflife.AboutUsActivity" />
+        <!--切换版本-->
+        <activity android:name="com.glorystudent.golflife.SwitchVersionActivity" />
+        <!--选择头像-->
+        <activity android:name="com.glorystudent.golflife.HeadPortraitActivity" />
+        <!--设置昵称-->
+        <activity android:name="com.glorystudent.golflife.EditNicknameActivity" />
+        <!--设置性别-->
+        <activity android:name="com.glorystudent.golflife.EditSexActivity" />
+        <!--选择地区-->
+        <activity android:name="com.glorystudent.golflife.SelectProvincesActivity" />
+        <!--选择市-->
+        <activity android:name="com.glorystudent.golflife.SelectCitysActivity" />
+        <!--选择县-->
+        <activity android:name="com.glorystudent.golflife.SelectCountysActivity" />
+        <!--我的二维码-->
+        <activity android:name="com.glorystudent.golflife.MyQRcodeActivity" />
+        <!--我的活动-->
+        <activity android:name="com.glorystudent.golflife.MyEventActivity" />
+        <!--查看凭证-->
+        <activity android:name="com.glorystudent.golflife.LookCertificateActivity" />
+        <!--查看详情-->
+        <activity android:name="com.glorystudent.golflife.LookDetailActivity" />
+        <!--报名名单-->
+        <activity android:name="com.glorystudent.golflife.ApplyListActivity" />
+        <!--活动签到-->
+        <activity android:name="com.glorystudent.golflife.EventSignUpActivity" />
+        <!--手动输入有效验证码-->
+        <activity android:name="com.glorystudent.golflife.EfficientCodeActivity" />
+        <!--照片墙-->
+        <activity android:name="com.glorystudent.golflife.PhotoWallActivity" />
+        <!--照片墙的详情-->
+        <activity android:name="com.glorystudent.golflife.PhotoWallDetailActivity" />
+        <!--选择学院-->
+        <activity android:name="com.glorystudent.golflife.ChooseSchoolActivity" />
+        <!--个人简介-->
+        <activity android:name="com.glorystudent.golflife.PersonalProfileActivity" />
+        <!--所获成就-->
+        <activity android:name="com.glorystudent.golflife.GetAchievementActivity" />
+        <!--服务条款-->
+        <activity android:name="com.glorystudent.golflife.ServiceTermsActivity" />
+        <!--教学中心-->
+        <activity android:name="com.glorystudent.golflife.TeachingCenterActivity" />
+        <!--新闻详情-->
+        <activity android:name="com.glorystudent.golflife.NewsDetailsActivity" />
+        <!--认证信息-->
+        <activity android:name="com.glorystudent.golflife.AuthenticationInfoActivity" />
+        <!--课程预约-->
+        <activity android:name="com.glorystudent.golflife.CourseBookingActivity" />
+        <!--上传记分卡-->
+        <activity android:name="com.glorystudent.golflife.UploadScorecardActivity" />
+        <!--选择球场-->
+        <activity android:name="com.glorystudent.golflife.ChoosePitchActivity" />
+        <!--视频录制-->
+        <activity
+            android:name="com.glorystudent.golflife.RecActivity"
+            android:theme="@style/FullScreen" />
+        <!--教学视频详情-->
+        <activity
+            android:name="com.glorystudent.golflife.VideoDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <!--测评分类-->
+        <activity android:name="com.glorystudent.golflife.AssessmentClassifyActivity" />
+        <!--常住测评-->
+        <activity android:name="com.glorystudent.golflife.ResidentActivity" />
+        <!--常住分析-->
+        <activity android:name="com.glorystudent.golflife.AnalysisActivity" />
+        <!--测评-->
+        <activity android:name="com.glorystudent.golflife.AssessmentActivity" />
+        <!--TPI测评-->
+        <activity android:name="com.glorystudent.golflife.TPITestActivity" />
+        <!--TPI测评问题选择界面-->
+        <activity android:name="com.glorystudent.golflife.TPIEvaluationActivity" />
+        <!--TPI测评结果-->
+        <activity android:name="com.glorystudent.golflife.EvaluationResultActivity" />
+        <!--开始测评-->
+        <activity android:name="com.glorystudent.golflife.MeasurementActivity" />
+        <!--填写球员-->
+        <activity android:name="com.glorystudent.golflife.FillPlayerActivity" />
+        <!--测试结果-->
+        <activity android:name="com.glorystudent.golflife.TestResultActivity" />
+        <!--模板-->
+        <activity
+            android:name="com.glorystudent.golflife.TemplateActivity"
+            android:theme="@style/FullScreen" />
+        <!--历史纪录-->
+        <activity android:name="com.glorystudent.golflife.HistoricalRecordActivity" />
+        <!--学员档案-->
+        <activity android:name="com.glorystudent.golflife.StudentsFileActivity" />
+        <!--添加学员-->
+        <activity android:name="com.glorystudent.golflife.AddStudentActivity" />
+        <!--行业日历-->
+        <activity android:name="com.glorystudent.golflife.IndustryCalendarActivity" />
+        <!--今日推荐-->
+        <activity android:name="com.glorystudent.golflife.TodayRecommendationActivity" />
+        <!--课表-->
+        <activity android:name="com.glorystudent.golflife.CourseTableActivity" />
+        <!--视频名字编辑-->
+        <activity android:name="com.glorystudent.golflife.VideoEditActivity" />
+        <!--全部标签-->
+        <activity android:name="com.glorystudent.golflife.LabelActivity" />
+        <!--上传阿里云视频-->
+        <activity android:name="com.glorystudent.golflife.UpLoadVideoActivity" />
+        <!--下载阿里云视频-->
+        <activity android:name="com.glorystudent.golflife.DownLoadVideoActivity" />
+        <!--云端视频编辑-->
+        <activity android:name="com.glorystudent.golflife.CloudVideoEditActivity" />
+        <!--保存到本地视频-->
+        <!--添加好友-->
+        <activity android:name="com.glorystudent.golflife.AddFriendsActivity" />
+        <!--手机联系人-->
+        <activity android:name="com.glorystudent.golflife.PhoneContactActivity" />
+        <!--好友资料-->
+        <activity android:name="com.glorystudent.golflife.FriendProfileActivity" />
+        <!--验证信息-->
+        <activity android:name="com.glorystudent.golflife.VerifyInformationActivity" />
+        <!--新的朋友-->
+        <activity android:name="com.glorystudent.golflife.NewFriendActivity" />
+        <!--聊天界面-->
+        <activity
+            android:name="com.glorystudent.golflife.FriendChatActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <!--选择视频-->
+        <activity android:name="com.glorystudent.golflife.ChooseVideoActivity" />
+        <!--预约课程-->
+        <activity android:name="com.glorystudent.golflife.AppointmentCourseActivity" />
+        <!--好友添加-->
+        <activity android:name="com.glorystudent.golflife.FriendsListActivity" />
+        <!--通讯录-->
+        <activity android:name="com.glorystudent.golflife.AddressFriendsActivity" />
+        <!--学员资料-->
+        <activity android:name="com.glorystudent.golflife.StudentProfileActivity" />
+        <!--系统消息-->
+        <activity android:name="com.glorystudent.golflife.SystemMessageActivity" />
+        <!--备注信息-->
+        <activity android:name="com.glorystudent.golflife.RemarkInfoActivity" />
+        <!--学员预约-->
+        <activity android:name="com.glorystudent.golflife.StudentAppointmentActivity" />
+        <!--视频涂鸦-->
+        <activity android:name="com.glorystudent.golflife.VideoGraffitiActivity" />
+        <!--系统跳转-->
+        <activity android:name="com.glorystudent.golflife.SystemJumpActivity" />
+        <!--我的钱包-->
+        <activity android:name="com.glorystudent.golflife.MyWalletActivity" />
+        <!--提现-->
+        <activity android:name="com.glorystudent.golflife.WithdrawalsActivity" />
+        <!--选择账户-->
+        <activity android:name="com.glorystudent.golflife.SelectAccountActivity" />
+        <!--添加账户-->
+        <activity android:name="com.glorystudent.golflife.AddAccountActivity" />
+        <!--提现详情-->
+        <activity android:name="com.glorystudent.golflife.WithdrawalsDetailActivity" />
+        <!--球队管理-->
+        <activity android:name="com.glorystudent.golflife.TeamManagementActivity" />
+        <!--选择城市-->
+        <activity android:name="com.glorystudent.golflife.SelectTeamCityActivity" />
+        <!--搜索城市-->
+        <!--球队详情-->
+        <activity android:name="com.glorystudent.golflife.TeamDetailActivity" />
+        <!--球队队员-->
+        <activity android:name="com.glorystudent.golflife.TeamMemberActivity" />
+        <!--队员信息-->
+        <activity android:name="com.glorystudent.golflife.TeamApplyInfoActivity" />
+        <!--球队相册-->
+        <activity android:name="com.glorystudent.golflife.TeamAlbumActivity" />
+        <!--球队相册详情-->
+        <activity android:name="com.glorystudent.golflife.TeamAlbumDetailActivity" />
+        <!--球队相册图片-->
+        <activity
+            android:name="com.glorystudent.golflife.TeamAlbumPhotoActivity"
+            android:theme="@style/FullScreen" />
+        <!--编辑球队信息-->
+        <activity android:name="com.glorystudent.golflife.TeamInfoActivity" />
+        <!--申请入队资料-->
+        <activity android:name="com.glorystudent.golflife.ApplicationMaterialActivity" />
+        <!--申请审核-->
+        <activity android:name="com.glorystudent.golflife.ApplicationCheckActivity" />
+        <!--申请创建球队-->
+        <activity
+            android:name="com.glorystudent.golflife.CreateTeamActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <!--编辑球队-->
+        <activity
+            android:name="com.glorystudent.golflife.EditTeamActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <!--选择性别-->
+        <activity android:name="com.glorystudent.golflife.SelectSexActivity" />
+        <!--球队简介-->
+        <activity android:name="com.glorystudent.golflife.TeamIntroductionActivity" />
+        <!--我的球队-->
+        <activity android:name="com.glorystudent.golflife.MyTeamActivity" />
+        <!--大事件详情-->
+        <activity android:name="com.glorystudent.golflife.BigEventDetailActivity" />
+        <!--图片浏览-->
+        <activity
+            android:name="com.glorystudent.golflife.ImageBrowsingActivity"
+            android:theme="@style/FullScreen" />
+        <!--视频分析-->
+        <activity
+            android:name="com.glorystudent.golflife.VideoAnalyzeActivity"
+            android:theme="@style/FullScreen" />
+        <!--视频对比，横竖切换不执行生命周期-->
+        <activity
+            android:name="com.glorystudent.golflife.VideoContrastActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FullScreen" />
+
+        <activity android:name="com.glorystudent.golflife.ApplyforRecordActivity"/>
+        <activity android:name="com.glorystudent.golflife.ApplyforDetailActivity"/>
+    </application>
+
+</manifest>

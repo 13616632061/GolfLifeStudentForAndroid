@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rv_calendar"
+        android:layout_width="148dp"
+        android:layout_height="72dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/shape_white_radius">
+
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_sixsize_redcircle" />
+
+        <TextView
+            android:id="@+id/tv_home_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="19dp"
+            android:text="@string/home_text7"
+            android:textColor="@color/primaryColor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_home_test"
+            android:layout_below="@+id/tv_home_test"
+            android:layout_marginTop="10dp"
+            android:text="@string/home_text8"
+            android:textColor="@color/colorGray"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_home_calendar" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:paddingBottom="13dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_money_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_money_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="2017-05-01"
+            android:textColor="@color/colorGray6"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_money_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="-100.00"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp" />
+    </RelativeLayout>
+</LinearLayout>

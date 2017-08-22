@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--标题栏-->
+    <LinearLayout
+        android:id="@id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="12dp"
+                android:src="@drawable/back_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测评结果"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/colorWhite"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        style="?android:progressBarStyleHorizontal"
+        android:max="100"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/team_text35"
+            android:background="@drawable/shape_tpi_preview"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/home_text91"
+            android:background="@drawable/shape_tpi_back"
+            android:textColor="@color/colorGray"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

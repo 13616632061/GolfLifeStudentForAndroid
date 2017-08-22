@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="13dp">
+
+        <com.glorystudent.golflibrary.widget.circleview.CircleImageView
+            android:id="@+id/iv_apply_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pic_default_avatar" />
+
+        <TextView
+            android:id="@+id/tv_apply_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_apply_head"
+            android:text="名字"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_apply_head"
+            android:layout_alignLeft="@id/tv_apply_name"
+            android:background="@color/colorGreen"
+            android:text="报名成功"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/cb_apply_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/selector_cb_expand"
+            android:button="@null"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/tv_apply_sign"
+            android:layout_width="71dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/cb_apply_expand"
+            android:background="@drawable/shape_btn_certificate"
+            android:drawableLeft="@drawable/icon_my_competiton_pen"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="签到"
+            android:textColor="@color/colorOrange"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_apply_cancel_sign"
+            android:layout_width="71dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/cb_apply_expand"
+            android:background="@drawable/shape_btn_certificate"
+            android:gravity="center"
+            android:text="取消签到"
+            android:textColor="@color/colorOrange"
+            android:textSize="14dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_apply_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别："
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号："
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123456789987654321"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公司："
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="荣耀信息技术开发公司"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="差点："
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_registration_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会员号码："
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8068"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_apply_guest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/shape_tv_guest"
+                    android:padding="4dp"
+                    android:text="嘉"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 同行嘉宾"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_guest_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1名："
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_guest_names"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="徐成平"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/item_horizontal_line2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_apply_call"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/icon_my_competition_phone"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:text="拨打电话"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_apply_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/icon_my_competition_message"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:text="发短信"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_apply_stop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/icon_my_competition_stop"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:text="拒绝报名"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

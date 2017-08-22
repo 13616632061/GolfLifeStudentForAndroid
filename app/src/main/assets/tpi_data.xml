@@ -1,0 +1,282 @@
+<root>
+  <test name="1.骨盆倾斜测试">
+    <option name="开始骨盆位置(主观)" field="StartRelvicPosition">
+      <item name="正常前倾"  />
+      <item name="S-姿势"  />
+      <item name="C-姿势"  />
+    </option>
+    <option name="动作幅度" field="MovementRange">
+      <item name="正常运动"  />
+      <item name="下背部弯曲受限"  />
+      <item name="下背部变平受限"  />
+      <item name="双向受限"  />
+    </option>
+    <option name="动作质量" field="MovementQuality">
+      <item name="流畅"  />
+      <item name="动作过程颤抖"  />
+      <item name="没有进行测试"  />
+    </option>
+  </test>
+
+  <test name="2.骨盆旋转测试">
+    <option name="不扶肩膀(左)" field="NotHoldShoulderLeft">
+      <item name="好"  />
+      <item name="受限"  />
+    </option>
+    <option name="不扶肩膀(右)" field="NotHoldShoulderRight">
+      <item name="好"  />
+      <item name="受限"  />
+    </option>
+    <option name="扶住肩膀(左)" field="HoldShoulderLeft">
+      <item name="有进步"  />
+      <item name="没进步"  />HoldShoulderRight
+    </option>
+    <option name="扶住肩膀(右)" field="HoldShoulderRight">
+      <item name="有进步"  />
+      <item name="没进步"  />
+    </option>
+    <option name="协调性(左)" field="HarmonyLeft">
+      <item name="好的旋转动作"  />
+      <item name="更多侧向动作"  />
+    </option>
+    <option name="协调性(右)" field="HarmonyRight">
+      <item name="好的旋转动作"  />
+      <item name="更多侧向动作"  />
+    </option>
+  </test>
+
+  <test name="3.躯干旋转测试" >
+    <option name="不扶髋部(左)" field="NotHoldHipLeft">
+      <item name="好"  />
+      <item name="受限"  />
+    </option>
+    <option name="不扶髋部(右)" field="NotHoldHipRight">
+      <item name="好"  />
+      <item name="受限"  />
+    </option>
+    <option name="扶住髋部(左)" field="HoldHipLeft">
+      <item name="有进步"  />
+      <item name="没进步"  />
+    </option>
+    <option name="扶住髋部(右)" field="HoldHipRight">
+      <item name="有进步"  />
+      <item name="没进步"  />
+    </option>
+  </test>
+
+
+  <test name="4.双手高举深蹲测试">
+    <option name="站立下蹲" field="StandingSquats">
+      <item name="头顶举杆伸蹲"  />
+      <item name="双臂下垂完整深蹲"  />
+      <item name="双臂下垂深蹲受限"  />
+    </option>
+    <option name="半跪踝关节测试" field="AnkleTest" >
+      <item name="双踝背屈良好"  />
+      <item name="右踝背屈受限"  />
+      <item name="左踝背屈受限"  />
+      <item name="双踝背屈受限"  />
+    </option>
+    <option name="身体重量是否侧移" field="LateralDisplacement">
+      <item name="没有重量侧移"  />
+      <item name="重量侧移右侧"  />
+      <item name="重量侧移左侧"  />
+    </option>
+  </test>
+
+  <test name="5.附身触脚测试">
+    <option name="接触两侧脚趾" field="ContactBothSidesToe">
+      <item name="能"  />
+      <item name="不能"  />
+    </option>
+    <option name="单侧接触脚趾" field="UnilateralContactToe">
+      <item name="是(两侧都接触)"  />
+      <item name="否(两侧都接触)"  />
+      <item name="左(单侧受限)"  />
+      <item name="右(单侧受限)"  />
+    </option>
+
+  </test>
+
+
+  <test name="6.90/90">
+    <option name="站立(左)" field="StandLeft">
+      <item name="超过脊柱角度"  />
+      <item name="等于脊柱角度"  />
+      <item name="小于脊柱角度"  />
+    </option>
+    <option name="站立(右)" field="StandRight">
+      <item name="超过脊柱角度"  />
+      <item name="等于脊柱角度"  />
+      <item name="小于脊柱角度"  />
+    </option>
+    <option name="高尔夫准备姿势(左)" field="GolfReadyPositionLeft">
+      <item name="与站立时相同"  />
+      <item name="比站立时少"  />
+      <item name="比站立时多"  />
+    </option>
+    <option name="高尔夫准备姿势(右)" field="GolfReadyPositionRight">
+      <item name="与站立时相同"  />
+      <item name="比站立时少"  />
+      <item name="比站立时多"  />
+    </option>
+  </test>
+
+
+  <test name="7.大腿平衡测试">
+    <option name="大腿与地面平行(左)" field="ThighParallelGroundLeft">
+      <item name="0-5秒"  />
+      <item name="6-10秒"  />
+      <item name="11-15秒"  />
+      <item name="16-20秒"  />
+      <item name="21-25秒"  />
+      <item name="超过25秒"  />
+    </option>
+    <option name="大腿与地面平行(右)" field="ThighParallelGroundRight">
+      <item name="0-5秒"  />
+      <item name="6-10秒"  />
+      <item name="11-15秒"  />
+      <item name="16-20秒"  />
+      <item name="21-25秒"  />
+      <item name="超过25秒"  />
+    </option>
+  </test>
+
+  <test name="8.背阔肌长度测试">
+    <option name="下背部平贴在墙上(左)" field="BackFlatWallLeft">
+      <item name="低于鼻子"  />
+      <item name="位于鼻子"  />
+      <item name="在鼻子和墙之间"  />
+      <item name="碰到墙"  />
+    </option>
+    <option name="下背部平贴在墙上(右)" field="BackFlatWallRight">
+      <item name="低于鼻子"  />
+      <item name="位于鼻子"  />
+      <item name="在鼻子和墙之间"  />
+      <item name="碰到墙"  />
+    </option>
+  </test>
+
+  <test name="9.下半身旋转测试">
+    <option name="上杆(左)" field="BackSwingLeft">
+      <item name="等于或超过60度"  />
+      <item name="小于60度"  />
+    </option>
+    <option name="上杆(右)" field="BackSwingRight">
+      <item name="等于或超过60度"  />
+      <item name="小于60度"  />
+    </option>
+    <option name="下杆(左)" field="DownSwingLeft">
+      <item name="等于或超过60度"  />
+    </option>
+    <option name="下杆(右)" field="DownSwingRight">
+      <item name="等于或超过60度"  />
+    </option>
+  </test>
+
+  <test name="10.坐姿躯干旋转测试">
+    <option name="球杆在背后(左)" field="CueBehindLeft">
+      <item name="超过45度"  />
+      <item name="等于45度"  />
+      <item name="小于45度"  />
+    </option>
+    <option name="球杆在背后(右)" field="CueBehindRight">
+      <item name="超过45度"  />
+      <item name="等于45度"  />
+      <item name="小于45度"  />
+    </option>
+  </test>
+
+  <test name="11.桥式抬腿">
+    <option name="仰卧(左)" field="SupinationLeft">
+      <item name="臀肌正常"  />
+      <item name="臀肌较弱"  />
+      <item name="臀肌抽筋"  />
+    </option>
+    <option name="仰卧(右)" field="SupinationRight">
+      <item name="臀肌正常"  />
+      <item name="臀肌较弱"  />
+      <item name="臀肌抽筋"  />
+    </option>
+  </test>
+
+
+  <test name="12.颈部旋转">
+    <option name="闭上嘴巴(左)" field="CloseMouthLeft">
+      <item name="双侧碰到"  />
+      <item name="受限"  />
+    </option>
+    <option name="闭上嘴巴(右)" field="CloseMouthRight">
+      <item name="双侧碰到"  />
+      <item name="受限"  />
+    </option>
+  </test>
+
+
+  <test name="13.前臂旋转">
+    <option name="屈双肘放于体侧(左)" field="RotatingElbowsSideBodyLeft">
+      <item name=">80度双侧"  />
+      <item name="手掌向上受限"  />
+      <item name="手掌向下受限"  />
+    </option>
+    <option name="屈双肘放于体侧(右)" field="RotatingElbowsSideBodyRight">
+      <item name=">80度双侧"  />
+      <item name="手掌向上受限"  />
+      <item name="手掌向下受限"  />
+    </option>
+  </test>
+
+
+  <test name="14.立腕(桡屈/尺屈)">
+    <option name="屈双肘放于体侧(左)" field="WristElbowsSideBodyLeft">
+      <item name="正常"  />
+      <item name="立腕受限"  />
+      <item name="释放受限"  />
+    </option>
+    <option name="屈双肘放于体侧(右)" field="WristElbowsSideBodyRight">
+      <item name="正常"  />
+      <item name="立腕受限"  />
+      <item name="释放受限"  />
+    </option>
+  </test>
+
+  <test name="15.手腕屈(内翻)" >
+    <option name="肘部伸直(左)" field="WristFlexionElbowsStraightLeft">
+      <item name="超过60度"  />
+      <item name="等于60度"  />
+      <item name="受限"  />
+    </option>
+    <option name="肘部伸直(右)" field="WristFlexionElbowsStraightRight">
+      <item name="超过60度"  />
+      <item name="等于60度"  />
+      <item name="受限"  />
+    </option>
+  </test>
+
+  <test name="16.手腕伸(外翻)">
+    <option name="肘部伸直(左)" field="WristExtensionElbowsStraightLeft">
+      <item name="60度或更好"  />
+      <item name="等于60度"  />
+      <item name="受限"  />
+    </option>
+    <option name="肘部伸直(右)" field="WristExtensionElbowsStraightRight">
+      <item name="60度或更好"  />
+      <item name="等于60度"  />
+      <item name="受限"  />
+    </option>
+  </test>
+
+
+  <test name="17.伸旋提测试">
+    <option name="祈祷姿势(备)" field="PrayingPosture1">
+      <item name="范围好"  />
+      <item name="在地面和耳朵之间"  />
+      <item name="在耳朵之上"  />
+    </option>
+    <option name="祈祷姿势(备)" field="PrayingPosture2">
+      <item name="范围好"  />
+      <item name="在地面和耳朵之间"  />
+      <item name="在耳朵之上"  />
+    </option>
+  </test>
+</root>

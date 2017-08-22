@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical" >
+
+    <!-- 这里的linearLayout加android:background=""这个属性要谨慎，如果加了后，popwindow是不能半透明了的 -->
+
+    <Button
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_btn_pop"
+        android:text="@string/chat_text23"
+        android:textSize="14sp"
+        android:textColor="@drawable/selector_pup_color"/>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_btn_pop"
+        android:text="@string/chat_text27"
+        android:textSize="14sp"
+        android:textColor="@drawable/selector_pup_color"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_btn_pop"
+        android:text="@string/chat_text24"
+        android:textSize="16sp"
+        android:textColor="@color/primaryColor"/>
+
+</LinearLayout>

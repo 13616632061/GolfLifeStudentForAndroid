@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGray17"
+    >
+    <!--标题栏-->
+    <LinearLayout
+        android:id="@id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="12dp"
+                android:src="@drawable/back_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TPI测评"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/colorWhite"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_circle"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="14dp"
+        >
+        <com.glorystudent.view.CycleWheelView
+            android:id="@+id/cycleWheelView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.glorystudent.view.CycleWheelView>
+        <LinearLayout
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.glorystudent.view.CycleWheelView
+            android:id="@+id/cycleWheelView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            </com.glorystudent.view.CycleWheelView>
+
+            <com.glorystudent.view.CycleWheelView
+            android:id="@+id/cycleWheelView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            </com.glorystudent.view.CycleWheelView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_preview"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/released_text24"
+        android:background="@drawable/shape_tpi_preview"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/bt_back"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/home_text91"
+        android:background="@drawable/shape_tpi_back"
+        android:textColor="@color/colorGray"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+</LinearLayout>

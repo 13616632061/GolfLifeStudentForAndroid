@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GolfLiftStudentForAndroid.iml" filepath="$PROJECT_DIR$/GolfLiftStudentForAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZXingAndroid/ZXingAndroid.iml" filepath="$PROJECT_DIR$/ZXingAndroid/ZXingAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/golflibrary/golflibrary.iml" filepath="$PROJECT_DIR$/golflibrary/golflibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/saveimagelib/saveimagelib.iml" filepath="$PROJECT_DIR$/saveimagelib/saveimagelib.iml" />
+    </modules>
+  </component>
+</project>

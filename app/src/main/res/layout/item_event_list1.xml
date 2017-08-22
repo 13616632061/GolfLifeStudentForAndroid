@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_competition_user_portrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_chat_golffriend" />
+
+        <TextView
+            android:id="@+id/tv_competition_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_competition_user_portrait"
+            android:text="何跃进"
+            android:textColor="@color/primaryColor"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_competition_cost_free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:text="免费活动"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_competition_cost"
+                android:layout_width="85dp"
+                android:layout_height="24dp"
+                android:background="@color/colorOrange"
+                android:gravity="center"
+                android:text="￥800.00"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_competition_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="深圳西丽湖高尔夫联谊赛"
+        android:textColor="@color/primaryColor"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_competition_image"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_appointment" />
+
+    <TextView
+        android:id="@+id/tv_competition_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:drawableLeft="@drawable/icon_game_time"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="2017年03月20日 16:00"
+        android:textColor="@color/colorGray"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_competition_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:drawableLeft="@drawable/icon_game_address"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="深圳市南山区西丽湖度假村西丽湖高尔夫"
+        android:textColor="@color/colorGray"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:drawableLeft="@drawable/icon_home_competiton_apply"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="已报名"
+            android:textColor="@color/colorGray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_competition_sign_up_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textColor="@color/colorOrange"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人"
+            android:textColor="@color/colorGray"
+            android:textSize="13sp" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_competition_sign_up_all_Count"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="200"-->
+        <!--android:textColor="@color/colorGray"-->
+        <!--android:textSize="13sp" />-->
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <LinearLayout
+        android:id="@id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/applogo" />
+
+            <ImageView
+                android:id="@+id/iv_upload_scorecard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/btn_home_score"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.glorystudent.widget.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.glorystudent.widget.PullableScrollView
+            android:id="@+id/msv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="188dp">
+
+                    <com.bigkoo.convenientbanner.ConvenientBanner
+                        android:id="@+id/vp_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="188dp" />
+
+                    <TextView
+                        android:id="@+id/tv_vp_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/center_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/stu_home_competition"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_home_competition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/icon_home_competition" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/home_text9"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="14sp" />
+
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignBottom="@+id/iv_home_competition"-->
+                        <!--android:layout_marginLeft="12dp"-->
+                        <!--android:layout_toRightOf="@+id/iv_home_competition"-->
+                        <!--android:text="@string/home_text10"-->
+                        <!--android:textColor="@color/colorGray9"-->
+                        <!--android:textSize="11sp" />-->
+                    </LinearLayout>
+
+                    <include layout="@layout/item_portrait_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/stu_home_appointment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_home_appointment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/icon_home_appointment" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/iv_home_appointment"
+                            android:layout_marginLeft="12dp"
+                            android:layout_toRightOf="@+id/iv_home_appointment"
+                            android:text="@string/home_text11"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/iv_home_appointment"
+                            android:layout_marginLeft="12dp"
+                            android:layout_toRightOf="@+id/iv_home_appointment"
+                            android:text="@string/home_text12"
+                            android:textColor="@color/colorGray9"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+
+                    <include
+                        layout="@layout/item_portrait_line"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/stu_home_team"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_home_team"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/icon_home_teamx" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_home_team"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/team_text1"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="14sp" />
+
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignBottom="@+id/iv_home_team"-->
+                        <!--android:layout_marginLeft="12dp"-->
+                        <!--android:layout_toRightOf="@+id/iv_home_team"-->
+                        <!--android:text="@string/team_text3"-->
+                        <!--android:textColor="@color/colorGray9"-->
+                        <!--android:textSize="11sp" />-->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/home_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorGray8"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/head_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="26dp"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginTop="26dp"
+                        android:src="@drawable/pic_home_hot" />
+
+                    <com.glorystudent.golflibrary.widget.upmarqueeview.UPMarqueeView
+                        android:id="@+id/marqueeView"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+                </LinearLayout>
+
+                <com.glorystudent.golflibrary.widget.oywidget.MyListView
+                    android:id="@+id/student_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@color/transparent" />
+            </LinearLayout>
+        </com.glorystudent.widget.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+
+    </com.glorystudent.widget.PullToRefreshLayout>
+</LinearLayout>

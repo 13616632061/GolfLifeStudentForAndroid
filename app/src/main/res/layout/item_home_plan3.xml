@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_home_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/home_text1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/primaryColor"/>
+        <TextView
+            android:id="@+id/tv_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:layout_marginTop="23dp"
+            android:text="@string/home_text2"
+            android:layout_gravity="center"
+            android:textColor="@color/colorOrange"
+            android:background="@drawable/shape_appointment"/>
+    </LinearLayout>
+</LinearLayout>

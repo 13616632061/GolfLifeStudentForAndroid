@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="12dp"
+                android:src="@drawable/back_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测评结果"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/colorWhite"/>
+            <TextView
+                android:id="@+id/tv_historical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/colorWhite"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/analysis_make_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#868686"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试前"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/analysis_make_befor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更换图片"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:background="@drawable/shape_analyisi_btn"
+                    android:padding="5dp"
+                    android:textColor="#333333"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/analysis_image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#e3b22e"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#868686"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试后"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/analysis_make_after"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更换图片"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:background="@drawable/shape_analyisi_btn"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#333333"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/analysis_image2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#333333"
+        >
+        
+        <RadioGroup
+            android:id="@+id/analysis_btngroup"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="6dp">
+            <RadioButton
+                android:id="@+id/analysis_btngroup_side"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="侧面"
+                android:background="@drawable/selector_analysis"
+                android:button="@null"
+                android:checked="true"
+                android:textColor="@drawable/selector_test_camera_textcolor"/>
+
+            <RadioButton
+                android:id="@+id/analysis_btngroup_front"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_analysis"
+                android:button="@null"
+                android:gravity="center"
+                android:text="正面"
+                android:textColor="@drawable/selector_test_camera_textcolor"
+                android:layout_marginLeft="20dp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

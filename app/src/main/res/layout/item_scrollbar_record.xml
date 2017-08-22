@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rv_record"
+        android:layout_width="148dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/shape_white_radius">
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_sixsize_bulecircle"/>
+        <TextView
+            android:id="@+id/tv_home_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/home_text5"
+            android:textSize="15sp"
+            android:textColor="@color/primaryColor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_home_test"
+            android:layout_alignLeft="@+id/tv_home_test"
+            android:layout_marginTop="10dp"
+            android:text="@string/home_text6"
+            android:textSize="11sp"
+            android:textColor="@color/colorGray"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_home_record"/>
+    </RelativeLayout>
+</LinearLayout>

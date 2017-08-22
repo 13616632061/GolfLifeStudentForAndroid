@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/colorOrange">
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_calendar"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:padding="15dp"
+            android:src="@drawable/btn_home_whiteleft"/>
+        <TextView
+            android:id="@+id/tv_calendar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="2017年1月"
+            android:textSize="24sp"
+            android:textColor="@color/colorWhite"/>
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_calendar"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/btn_home_whiteright"/>
+    </RelativeLayout>
+</LinearLayout>

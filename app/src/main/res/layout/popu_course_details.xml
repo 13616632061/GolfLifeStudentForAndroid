@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/rl_info"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_layout_radius">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_text68"
+                            android:textColor="@color/colorGray10"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_course_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_text70"
+                            android:textColor="@color/colorGray10"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_class_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/colorOrange"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_text69"
+                            android:textColor="@color/colorGray10"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_class_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_text71"
+                            android:textColor="@color/colorGray10"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_play_information"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="取消预约"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_contact_him"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_login"
+                    android:gravity="center"
+                    android:text="联系他"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_circle"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_tv_tencircle" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_circle"
+            android:layout_marginLeft="106dp"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_below="@+id/tv_name"
+            android:textColor="@color/colorGray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_veteran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_age"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/tv_age"
+            android:textColor="@color/colorGray"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_veteran"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@+id/tv_veteran"
+            android:text="提醒签课"
+            android:textColor="@color/colorOrange"
+            android:textSize="14sp"/>
+
+        <com.glorystudent.golflibrary.widget.circleview.CircleImageView
+            android:id="@+id/iv_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="46dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_chat_golffriend"/>
+    </RelativeLayout>
+</LinearLayout>

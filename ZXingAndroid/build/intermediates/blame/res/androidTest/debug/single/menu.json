@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\code\\GolfLiftStudentForAndroid\\ZXingAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\capture.xml",
+        "source": "F:\\code\\GolfLiftStudentForAndroid\\ZXingAndroid\\build\\intermediates\\bundles\\debug\\res\\menu\\capture.xml"
+    },
+    {
+        "merged": "F:\\code\\GolfLiftStudentForAndroid\\ZXingAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\encode.xml",
+        "source": "F:\\code\\GolfLiftStudentForAndroid\\ZXingAndroid\\build\\intermediates\\bundles\\debug\\res\\menu\\encode.xml"
+    },
+    {
+        "merged": "F:\\code\\GolfLiftStudentForAndroid\\ZXingAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\history.xml",
+        "source": "F:\\code\\GolfLiftStudentForAndroid\\ZXingAndroid\\build\\intermediates\\bundles\\debug\\res\\menu\\history.xml"
+    }
+]

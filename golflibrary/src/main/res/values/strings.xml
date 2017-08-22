@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FlavourLibrary</string>
+    <drawable name="bkcolor">#E1E1E1</drawable>
+</resources>

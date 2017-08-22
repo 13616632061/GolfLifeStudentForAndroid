@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <LinearLayout
+        android:id="@id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/back_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:text="@string/team_text1"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:text="@string/team_text4"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.glorystudent.widget.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.glorystudent.widget.PullableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_team_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/nav_team_pack_up"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="12dp"
+                        android:textColor="@color/colorGray"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_team_search"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_search_corner"
+                        android:drawableLeft="@drawable/icon_search"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/team_text8"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="8dp"
+                        android:textColor="@color/colorGray"
+                        android:textColorHint="@color/colorGray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_team_sure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:text="@string/team_text19"
+                        android:textColor="@color/colorGray"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_my_team"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGray6">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="11dp"
+                            android:text="@string/team_text5"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <com.glorystudent.golflibrary.widget.oywidget.MyListView
+                        android:id="@+id/lv_my_team_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_near_team"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGray6">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="11dp"
+                            android:text="@string/team_text6"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <com.glorystudent.golflibrary.widget.oywidget.MyListView
+                        android:id="@+id/lv_near_team_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.glorystudent.widget.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+    </com.glorystudent.widget.PullToRefreshLayout>
+</LinearLayout>

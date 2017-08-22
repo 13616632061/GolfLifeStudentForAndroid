@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null">
+
+        <ImageView
+            android:id="@+id/iv_album_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_album_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_album_image"
+            android:layout_marginTop="2dp"
+            android:text="5月例赛"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_album_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_album_name"
+            android:text="32张"
+            android:textColor="@color/colorGray6"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_album_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_album_name"
+            android:layout_marginLeft="57dp"
+            android:text="2017.05.22"
+            android:textColor="@color/colorGray6"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</LinearLayout>

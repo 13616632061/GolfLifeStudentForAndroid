@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <!-- 这里的linearLayout加android:background=""这个属性要谨慎，如果加了后，popwindow是不能半透明了的 -->
+    <RelativeLayout
+        android:id="@+id/picker_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite2">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="取消"
+            android:textSize="16sp"
+            android:textColor="@color/primaryColor"/>
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="确定"
+            android:textSize="16sp"
+            android:textColor="@color/primaryColor"/>
+    </RelativeLayout>
+    <include layout="@layout/item_horizontal_line2"/>
+    <com.glorystudent.golflibrary.widget.pickerscrollview.PickerScrollView
+        android:id="@+id/pickerscrlllview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+</LinearLayout>

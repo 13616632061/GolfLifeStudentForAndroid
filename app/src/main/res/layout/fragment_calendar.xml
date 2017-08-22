@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray5"
+    android:orientation="vertical">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <com.glorystudent.golflibrary.widget.oywidget.MyGridView
+                android:id="@+id/gv_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:numColumns="7"
+                android:paddingBottom="10dp" />
+
+            <com.glorystudent.golflibrary.widget.oywidget.MyGridView
+                android:id="@+id/gv_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:numColumns="7" />
+
+            <!--<com.glory.golflibrary.widget.oywidget.MyListView-->
+                <!--android:id="@+id/event_information_lv"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorGray5"-->
+                <!--android:divider="@null"-->
+                <!--android:paddingBottom="20dp"-->
+                <!--android:scrollbars="none"-->
+                <!--android:transcriptMode="alwaysScroll" />-->
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</LinearLayout>

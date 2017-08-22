@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@android:color/transparent" >
+
+        <TextView
+            android:id="@+id/tv_label_item_wheel_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/iv_cyclewhell"
+            android:layout_toRightOf="@id/tv_label_item_wheel_custom"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btnhomechoiceblack" />
+
+    <ImageView
+        android:id="@+id/iv_rotate"
+        android:visibility="gone"
+        android:layout_toRightOf="@id/tv_label_item_wheel_custom"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/btnhomeseach" />
+    </RelativeLayout>

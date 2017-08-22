@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--主题颜色-->
+    <color name="primaryColor">#515151</color>
+    <!--主题橙色254 144 66-->
+    <color name="colorOrange">#fe9042</color>
+    <!--浅橙色 239 127 47-->
+    <color name="colorOrange2">#ef7f2f</color>
+    <!--深橙色255 107 15-->
+    <color name="colorOrange3">#ff6b0f</color>
+    <!--浅橙色254 174 66-->
+    <color name="colorOrange4">#feae42</color>
+    <!--深橙色252 132 88-->
+    <color name="colorOrange5">#fc8458</color>
+    <!--浅橙色255 209 177-->
+    <color name="colorOrange6">#ffd1b1</color>
+    <!--浅橙色 244 171 93-->
+    <color name="colorOrange7">#f4ad5b</color>
+    <!--浅橙色 255 162 96-->
+    <color name="colorOrange8">#ffa260</color>
+    <!--浅橙色 255 188 122-->
+    <color name="colorOrange9">#FFBC70</color>
+    <!--浅橙色 255 189 113-->
+    <color name="colorOrange10">#ffbd71</color>
+    <!--橙色 254 144 66-->
+    <color name="colorOrange11">#FF9042</color>
+    <!--浅橙色255 178 124 0.26-->
+    <color name="colorAlphaOrange">#42ffb27c</color>
+
+    <!--占位图-->
+    <color name="colorPlaceHolder">#f0f0f0</color>
+
+    <!--灰色102 102 102-->
+    <color name="colorGray">#666666</color>
+
+    <!--灰色 238 238 238-->
+    <color name="colorGray2">#eeeeee</color>
+    <!--深灰色 225 225 225-->
+    <color name="colorGray3">#e1e1e1</color>
+    <!--深灰色 242 242 242-->
+    <color name="colorGray4">#f2f2f2</color>
+    <!--浅灰色243 243 243-->
+    <color name="colorGray5">#f3f3f3</color>
+    <!--灰色 153 153 153-->
+    <color name="colorGray6">#999999</color>
+    <!--浅灰色212 212 212-->
+    <color name="colorGray7">#d4d4d4</color>
+    <!--浅灰色224 224 224-->
+    <color name="colorGray8">#e0e0e0</color>
+    <!--浅灰色169 169 169-->
+    <color name="colorGray9">#a9a9a9</color>
+    <!--浅灰色198 197 197-->
+    <color name="colorGray10">#c6c5c5</color>
+    <!--灰色182 182 182-->
+    <color name="colorGray11">#b6b6b6</color>
+    <!--灰色172 172 172-->
+    <color name="colorGray12">#acacac</color>
+    <!--灰色216 216 216-->
+    <color name="colorGray13">#d8d8d8</color>
+    <!--灰色185 184 184-->
+    <color name="colorGray14">#b9b8b8</color>
+    <!--灰色96 98 100-->
+    <color name="colorGray15">#606264</color>
+    <!--灰色203 203 203-->
+    <color name="colorGray16">#cbcbcb</color>
+    <!--灰色245 245 249-->
+    <color name="colorGray17">#f5f5f9</color>
+
+    <!--白色 255 255 255-->
+    <color name="colorWhite">#ffffff</color>
+    <!--白色 255 255 255 0.6-->
+    <color name="colorWhite2">#99ffffff</color>
+
+    <!--黑色 51 51 51 -->
+    <color name="colorBlack">#333333</color>
+    <!--黑色 65 65 65 -->
+    <color name="colorBlack2">#414141</color>
+    <!--黑色 38 38 38 -->
+    <color name="colorBlack3">#262626</color>
+    <!--黑色 76 75 75-->
+    <color name="colorBlack4">#4c4b4b</color>
+    <!--黑色 83 83 83-->
+    <color name="colorBlack5">#535353</color>
+    <!--黑色 0 0 0-->
+    <color name="colorBlack6">#000000</color>
+    <!--黑色 0 0 0 0.45-->
+    <color name="colorAlphaBlack">#73000000</color>
+    <!--黑色 0 0 0 0.5-->
+    <color name="colorAlphaBlack2">#80000000</color>
+
+    <!--黄色 255 206 66-->
+    <color name="colorYellow">#ffce42</color>
+    <!--黄色 255 212 41-->
+    <color name="colorYellow2">#FFD429</color>
+    <!--黄色 255 190 3-->
+    <color name="colorYellow3">#FFBE03</color>
+    <!--黄色 254 144 66-->
+    <color name="colorYellow4">#f59042</color>
+
+    <!--红色 255 68 68-->
+    <color name="colorRed">#ff4444</color>
+    <!--浅红色 255 137 122-->
+    <color name="colorRed2">#ff897a</color>
+    <!--浅红色 128 255 0 0-->
+    <color name="colorAlphaRed">#80ff0000</color>
+    <!--深红色-->
+    <color name="colorRed001">#fc6938</color>
+    <!--浅红色-->
+    <color name="colorRed002">#fc8e63</color>
+
+    <!--蓝色 128 196 255-->
+    <color name="colorBlue">#80c4ff</color>
+    <!--天蓝色 0 220 194-->
+    <color name="colorBlue2">#00dcc2</color>
+    <!--蓝色74 144 226-->
+    <color name="colorBlue3">#4a90e2</color>
+
+    <!--绿色 39 216 158-->
+    <color name="colorGreen">#27d89e</color>
+    <!--绿色 15 152 53-->
+    <color name="colorGreen2">#0f9835</color>
+</resources>

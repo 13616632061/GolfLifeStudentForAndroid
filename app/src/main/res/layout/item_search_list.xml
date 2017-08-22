@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+        <EditText
+            android:id="@+id/search_address"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/icon_search"
+            android:paddingLeft="5dp"
+            android:drawablePadding="5dp"
+            android:hint="搜索"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColorHint="@color/colorGray"
+            android:textColor="@color/primaryColor"
+            android:background="@drawable/shape_et_corner"/>
+    </LinearLayout>
+</LinearLayout>

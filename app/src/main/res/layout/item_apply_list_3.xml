@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="13dp">
+
+        <ImageView
+            android:id="@+id/iv_apply_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pic_default_avatar" />
+
+        <TextView
+            android:id="@+id/tv_apply_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_apply_head"
+            android:text="名字"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_apply_head"
+            android:layout_alignLeft="@id/tv_apply_name"
+            android:background="@color/colorRed2"
+            android:text="已被拒绝"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/cb_apply_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_cb_expand"
+            android:button="@null"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_apply_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="gone">
+
+        <include layout="@layout/item_horizontal_line2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原因："
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_apply_reject_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不是会员"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="允许此人再次报名" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:id="@+id/rg_apply_allow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_apply_allow"
+                    android:layout_width="62dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/selector_radio_allow"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="允许"
+                    android:textColor="@drawable/color_radio_allow"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_apply_not_allow"
+                    android:layout_width="62dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/selector_radio_allow"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="不允许"
+                    android:textColor="@drawable/color_radio_allow"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

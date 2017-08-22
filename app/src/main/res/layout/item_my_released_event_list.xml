@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_my_released_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/iv_my_released_pic"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@color/colorPlaceHolder" />
+
+    <TextView
+        android:id="@+id/tv_my_released_event_name"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_my_released_pic"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/iv_my_released_pic"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/primaryColor"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_my_released_pic"
+        android:layout_marginBottom="28dp"
+        android:layout_toRightOf="@+id/iv_my_released_pic"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_my_released_sign_up_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOrange"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人已报名"
+            android:textColor="@color/colorGray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_my_released_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_my_released_pic"
+        android:layout_toRightOf="@+id/iv_my_released_pic"
+        android:textColor="@color/colorGray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_look_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_my_released_start_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/shape_btn_certificate"
+        android:paddingBottom="5dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingTop="5dp"
+        android:text="@string/event_text2"
+        android:textColor="@color/colorOrange"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_released_event_if_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/iv_my_released_pic"
+        android:layout_marginRight="30dp"
+        android:text="已取消"
+        android:textColor="@color/colorOrange"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorGray7" />
+</RelativeLayout>

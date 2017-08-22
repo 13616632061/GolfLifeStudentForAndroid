@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray4"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/colorOrange">
+
+            <RelativeLayout
+                android:id="@+id/head_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.thinkcool.circletextimageview.CircleTextImageView
+                    android:id="@+id/my_head_portrait"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/pic_default_avatar"
+                    app:citv_border_color="@color/colorWhite"
+                    app:citv_border_width="3dp" />
+
+                <ImageView
+                    android:id="@+id/my_coach_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="65dp"
+                    android:src="@drawable/icon_bigv" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/my_nickname"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/head_ll"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="昵称"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_my_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="22dp"
+                android:src="@drawable/icon_my_code" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/my_tv_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@drawable/icon_my_competition"
+            android:drawablePadding="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/my_text4"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+
+        <include layout="@layout/item_horizontal_line2" />
+
+        <TextView
+            android:id="@+id/my_tv_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@drawable/icon_my_team"
+            android:drawablePadding="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/my_text39"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/my_tv_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@drawable/icon_my_score"
+            android:drawablePadding="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/my_text3"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/item_horizontal_line2"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/my_tv_attestation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@drawable/icon_my_attestation"
+                android:drawablePadding="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/set_text29"
+                android:textColor="@color/primaryColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_attestation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:text="@string/set_text33"
+                android:textColor="@color/primaryColor"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/item_horizontal_line2" />
+
+        <TextView
+            android:id="@+id/my_tv_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@drawable/icon_my_school"
+            android:drawablePadding="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/set_text30"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/my_tv_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@drawable/icon_my_money"
+            android:drawablePadding="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/my_text40"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+
+        <include
+            layout="@layout/item_horizontal_line2"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/my_tv_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@drawable/icon_my_invite"
+            android:drawablePadding="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/my_text7"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/my_tv_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@drawable/icon_my_set"
+            android:drawablePadding="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/my_text8"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>

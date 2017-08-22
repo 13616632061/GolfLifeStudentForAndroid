@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.glorystudent.golflife.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/primaryColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/selector_rb_home"
+                android:gravity="center"
+                android:text="@string/tab_home"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/selector_rb_video"
+                android:gravity="center"
+                android:text="@string/tab_video"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:clickable="false" />
+
+            <RadioButton
+                android:id="@+id/rb_chat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/selector_rb_chat"
+                android:gravity="center"
+                android:text="@string/tab_chat"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_my"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/selector_rb_my"
+                android:gravity="center"
+                android:text="@string/tab_my"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_message_num"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/shape_tv_redcircle"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="9sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_rec"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/tab_vcr_n" />
+</RelativeLayout>
