@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">高尔夫学生版</string>
+    <string name="app_name">高尔夫人生</string>
 
     <string name="login_text1">请输入手机号</string>
     <string name="login_text2">输入验证码</string>
