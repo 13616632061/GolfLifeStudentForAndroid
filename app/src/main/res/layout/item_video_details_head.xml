@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <FrameLayout
         android:id="@+id/video_layout"
         android:layout_width="fill_parent"
@@ -71,6 +72,7 @@
             android:src="@drawable/btn_home_bigplay"/>
         </RelativeLayout>
     </FrameLayout>
+
     <LinearLayout
         android:id="@+id/bottom_layout"
         android:layout_width="fill_parent"

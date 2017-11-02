@@ -68,24 +68,24 @@ public class MyEventActivity extends BaseActivity {
                 break;
             case R.id.tv_release_event:
                 if (SharedUtil.getBoolean(Constants.LOGIN_STATE)) {//需要登陆
-                    if (SharedUtil.getString(Constants.GROUP_ID) != null && !SharedUtil.getString(Constants.GROUP_ID).isEmpty()) {
+//                    if (SharedUtil.getString(Constants.GROUP_ID) != null && !SharedUtil.getString(Constants.GROUP_ID).isEmpty()) {
                         //必须为教练才能使用
                         Intent intent = new Intent(this, EventReleasedActivity.class);
                         intent.putExtra("add", true);
                         startActivity(intent);
-                    } else {
-                        Dialog.getInstance().setOnShowDialogListener(new Dialog.OnShowDialogListener() {
-                            @Override
-                            public void onSure() {
-                                startActivity(new Intent(MyEventActivity.this, MyAttestationActivity.class));
-                            }
-
-                            @Override
-                            public void onCancel() {
-
-                            }
-                        }).showDialog(this, "此功能只有教练才能使用", "是否申请教练", "前往");
-                    }
+//                    } else {
+//                        Dialog.getInstance().setOnShowDialogListener(new Dialog.OnShowDialogListener() {
+//                            @Override
+//                            public void onSure() {
+//                                startActivity(new Intent(MyEventActivity.this, MyAttestationActivity.class));
+//                            }
+//
+//                            @Override
+//                            public void onCancel() {
+//
+//                            }
+//                        }).showDialog(this, "此功能只有教练才能使用", "是否申请教练", "前往");
+//                    }
                 } else {
                     Dialog.getInstance().setOnShowDialogListener(new Dialog.OnShowDialogListener() {
                         @Override

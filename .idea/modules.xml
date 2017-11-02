@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GolfLiftStudentForAndroid.iml" filepath="$PROJECT_DIR$/GolfLiftStudentForAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GolfLifeStudentForAndroid.iml" filepath="$PROJECT_DIR$/GolfLifeStudentForAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/ZXingAndroid/ZXingAndroid.iml" filepath="$PROJECT_DIR$/ZXingAndroid/ZXingAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/golflibrary/golflibrary.iml" filepath="$PROJECT_DIR$/golflibrary/golflibrary.iml" />

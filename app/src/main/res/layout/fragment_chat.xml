@@ -70,6 +70,7 @@
                 android:src="@drawable/nav_home_add"/>
         </RelativeLayout>
     </LinearLayout>
+
     <FrameLayout
         android:id="@+id/chat_fragment"
         android:layout_width="match_parent"

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,6 +45,7 @@ import com.glorystudent.widget.PullableScrollView;
 import com.google.gson.Gson;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.StringCallback;
+import com.lzy.okgo.request.BaseRequest;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -212,9 +214,17 @@ public class StudentHomeFragment extends BaseFragment implements View.OnClickLis
                 .params("request", requestJson)
                 .execute(new StringCallback() {
                     @Override
+                    public void onBefore(BaseRequest request) {
+                        super.onBefore(request);
+                        System.out.println("广告URL："+request.getUrl());
+                        System.out.println("广告Params："+request.getParams());
+                    }
+
+                    @Override
                     public void onSuccess(String s, Call call, Response response) {
                         try {
                             JSONObject jo = new JSONObject(s);
+                            System.out.println("广告jo："+jo);
                             String statuscode = jo.getString("statuscode");
                             String statusmessage = jo.getString("statusmessage");
                             if (statuscode.equals("1")) {
@@ -259,9 +269,17 @@ public class StudentHomeFragment extends BaseFragment implements View.OnClickLis
                 .params("request", newsrequestJson2)
                 .execute(new StringCallback() {
                     @Override
+                    public void onBefore(BaseRequest request) {
+                        super.onBefore(request);
+                        System.out.println("新闻1URL："+request.getUrl());
+                        System.out.println("新闻1Params："+request.getParams());
+                    }
+
+                    @Override
                     public void onSuccess(String s, Call call, Response response) {
                         try {
                             JSONObject jo = new JSONObject(s);
+                            System.out.println("新闻1URL："+jo);
                             String statuscode = jo.getString("statuscode");
                             String statusmessage = jo.getString("statusmessage");
                             if (statuscode.equals("1")) {
@@ -302,9 +320,17 @@ public class StudentHomeFragment extends BaseFragment implements View.OnClickLis
                 .params("request", newsrequestJson)
                 .execute(new StringCallback() {
                     @Override
+                    public void onBefore(BaseRequest request) {
+                        super.onBefore(request);
+                        System.out.println("新闻2URL："+request.getUrl());
+                        System.out.println("新闻2Params："+request.getParams());
+                    }
+
+                    @Override
                     public void onSuccess(String s, Call call, Response response) {
                         try {
                             JSONObject jo = new JSONObject(s);
+                            System.out.println("新闻2URL："+jo);
                             String statuscode = jo.getString("statuscode");
                             String statusmessage = jo.getString("statusmessage");
                             if (statuscode.equals("1")) {

@@ -1,10 +1,10 @@
 [
     {
-        "merged": "F:\\code\\GolfLiftStudentForAndroid\\ZXingAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\launcher_icon.png",
-        "source": "F:\\code\\GolfLiftStudentForAndroid\\ZXingAndroid\\build\\intermediates\\bundles\\debug\\res\\drawable\\launcher_icon.png"
+        "merged": "D:\\GolfLifeProject\\GolfLifeStudentForAndroid\\ZXingAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\launcher_icon.png",
+        "source": "D:\\GolfLifeProject\\GolfLifeStudentForAndroid\\ZXingAndroid\\build\\intermediates\\bundles\\debug\\res\\drawable\\launcher_icon.png"
     },
     {
-        "merged": "F:\\code\\GolfLiftStudentForAndroid\\ZXingAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\share_via_barcode.png",
-        "source": "F:\\code\\GolfLiftStudentForAndroid\\ZXingAndroid\\build\\intermediates\\bundles\\debug\\res\\drawable\\share_via_barcode.png"
+        "merged": "D:\\GolfLifeProject\\GolfLifeStudentForAndroid\\ZXingAndroid\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\share_via_barcode.png",
+        "source": "D:\\GolfLifeProject\\GolfLifeStudentForAndroid\\ZXingAndroid\\build\\intermediates\\bundles\\debug\\res\\drawable\\share_via_barcode.png"
     }
 ]

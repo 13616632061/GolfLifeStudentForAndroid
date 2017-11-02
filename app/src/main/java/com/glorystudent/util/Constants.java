@@ -9,7 +9,7 @@ public interface Constants {
     String BASE_URL2 = "https://app.pgagolf.cn";
     String BASE_URL3 = "https://192.168.1.168:4431";
     String BASE_URL4 = "http://192.168.1.199:8000";
-    String BASE_URL = BASE_URL2;
+    String BASE_URL = BASE_URL4;
     String DEFAULT_USERNAME = "用户";
     String USER_ID = "userid";
     String NUMBER_ID = "numberid";

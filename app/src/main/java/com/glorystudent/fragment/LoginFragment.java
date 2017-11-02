@@ -34,6 +34,7 @@ import com.hyphenate.EMCallBack;
 import com.hyphenate.chat.EMClient;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.StringCallback;
+import com.lzy.okgo.request.BaseRequest;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -113,6 +114,7 @@ public class LoginFragment extends BaseFragment implements TextWatcher, Compound
                     break;
                 case LOGIN_SUCCEED:
                     //登陆成功
+                    Log.d("print", "getEventBus: 点击了微信登陆1");
                     openid = (String) map.get("openid");
                     UserRequestEntity userRequestEntity = new UserRequestEntity();
                     UserRequestEntity.UserBean userBean = new UserRequestEntity.UserBean();
@@ -125,6 +127,7 @@ public class LoginFragment extends BaseFragment implements TextWatcher, Compound
                         @Override
                         public void parseDatas(String json) {
                             try {
+                                Log.d("print", "getEventBus: 点击了微信登陆"+json);
                                 JSONObject jo = new JSONObject(json);
                                 String statuscode = jo.getString("statuscode");
                                 String statusmessage = jo.getString("statusmessage");
@@ -265,7 +268,7 @@ public class LoginFragment extends BaseFragment implements TextWatcher, Compound
 //                                                    }
 //                                                }
 //                                            });
-
+                                    System.out.println("短信验证码:"+s);
                                     if(!TextUtils.isEmpty(s)){
                                         ResponseSMSCodeEntity responseSMSCodeEntity=new Gson().fromJson(s,ResponseSMSCodeEntity.class);
                                         if(responseSMSCodeEntity.getStatuscode()==1){
@@ -441,7 +444,9 @@ public class LoginFragment extends BaseFragment implements TextWatcher, Compound
                     Toast.makeText(getActivity(), "请同意服务条款", Toast.LENGTH_SHORT).show();
                     return;
                 }
+                Log.d("print", "初始化");
                 Platform wechat = ShareSDK.getPlatform(getActivity(), Wechat.NAME);
+                Log.d("print", "初始化成功");
                 wechat.setPlatformActionListener(new PlatformActionListener() {
 
                     @Override
@@ -449,6 +454,7 @@ public class LoginFragment extends BaseFragment implements TextWatcher, Compound
                         userid = platform.getDb().getUserId();
                         map = hashMap;
                         handler.sendEmptyMessage(LOGIN_SUCCEED);
+                        Log.d("print", "userid"+userid);
                     }
 
                     @Override

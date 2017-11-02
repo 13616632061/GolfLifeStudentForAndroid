@@ -37,7 +37,6 @@ import butterknife.OnClick;
 
 public class ApplicationCheckActivity extends BaseActivity implements AdapterView.OnItemClickListener {
     private static final String TAG = "ApplyCheckActivity";
-
     @Bind(R.id.back)
     ImageView back;
     @Bind(R.id.list_view)

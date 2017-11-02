@@ -5,12 +5,6 @@
     android:layout_height="match_parent"
     tools:context="com.glorystudent.golflife.MainActivity">
 
-    <FrameLayout
-        android:id="@+id/fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/rl_bottom" />
-
     <RelativeLayout
         android:id="@+id/rl_bottom"
         android:layout_width="match_parent"
@@ -146,4 +140,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="6dp"
         android:src="@drawable/tab_vcr_n" />
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

@@ -200,6 +200,7 @@ public class EventDetailActivity extends BaseActivity implements PlatformActionL
         if (id != -1) {
             weburl = String.format(Constants.EVENT_DETAIL_URL, id, SharedUtil.getString(Constants.USER_ID));
             webView.loadUrl(weburl);
+            System.out.println("weburl="+weburl);
         }
     }
 
